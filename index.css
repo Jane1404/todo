@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Josefin+Sans:ital,wght@1,600&family=Piedra&family=Roboto&family=Shadows+Into+Light&display=swap');
+body {
+  font-family: Piedra, cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #228B22;
+  background-image: url(https://images.vectorhq.com/images/previews/93d/leaves-psd-450391.png);
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.main-header {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+.sub-header {
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+.container {
+  max-width: 600px;
+  border: 1px solid grey;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.new-todo-block {
+  display: flex;
+}
+
+.new-todo {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+  font-size: 22px;
+  color: black;
+  font-family: Roboto, sans serif;
+  flex: 1 1 auto;
+}
+
+.add-todo {
+  width: 90px;
+  height: 55px;
+  margin-left: 12px;
+  border-radius: 20px;
+  border-color: #696969;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.add-todo:hover {
+  transform: rotate(10deg);
+}
+
+.todo {
+  list-style: upper-roman;
+}
+
+.list-item {
+  margin: 8px;
+  padding: 8px;
+  font-size: 20px;
+  border-bottom: 1px solid green;
+}
+
+.list-item:hover {
+  transform: scale(1.01);
+}
+
+.todo-check {
+  display: none;
+}
+
+.todo-label span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid green;
+  border-radius: 50%;
+}
+
+.list-item-content {
+  display: flex;
+}
+
+.todo-check:checked+.todo-label {
+  text-decoration: line-through;
+  color: #00FF00;
+  opacity: .25;
+}
+
+.todo-check:checked+.todo-label span {
+  border: 1px solid #00FF00;
+  opacity: .55;
+  background-color: #00FF00;
+}
+
+.list-item-remove-btn {
+  margin-left: auto;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.list-item-remove-btn:hover {
+  box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, .35);
+}
